@@ -1,0 +1,11 @@
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.Models\bin\Debug\net6.0\EmployeeManagementSystem.Models.deps.json
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.Models\bin\Debug\net6.0\EmployeeManagementSystem.Models.dll
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.Models\bin\Debug\net6.0\EmployeeManagementSystem.Models.pdb
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.Models\obj\Debug\net6.0\EmployeeManagementSystem.Models.GeneratedMSBuildEditorConfig.editorconfig
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.Models\obj\Debug\net6.0\EmployeeManagementSystem.Models.AssemblyInfoInputs.cache
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.Models\obj\Debug\net6.0\EmployeeManagementSystem.Models.AssemblyInfo.cs
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.Models\obj\Debug\net6.0\EmployeeManagementSystem.Models.csproj.CoreCompileInputs.cache
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.Models\obj\Debug\net6.0\EmployeeManagementSystem.Models.dll
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.Models\obj\Debug\net6.0\refint\EmployeeManagementSystem.Models.dll
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.Models\obj\Debug\net6.0\EmployeeManagementSystem.Models.pdb
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.Models\obj\Debug\net6.0\ref\EmployeeManagementSystem.Models.dll

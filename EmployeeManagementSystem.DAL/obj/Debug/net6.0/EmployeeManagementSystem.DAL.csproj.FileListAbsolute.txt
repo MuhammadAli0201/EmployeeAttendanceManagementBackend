@@ -1,0 +1,17 @@
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\bin\Debug\net6.0\EmployeeManagementSystem.DAL.deps.json
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\bin\Debug\net6.0\EmployeeManagementSystem.DAL.runtimeconfig.json
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\bin\Debug\net6.0\EmployeeManagementSystem.DAL.dll
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\bin\Debug\net6.0\EmployeeManagementSystem.DAL.pdb
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\bin\Debug\net6.0\EmployeeManagementSystem.Models.dll
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\bin\Debug\net6.0\EmployeeManagementSystem.Models.pdb
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\obj\Debug\net6.0\EmployeeManagementSystem.DAL.csproj.AssemblyReference.cache
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\obj\Debug\net6.0\EmployeeManagementSystem.DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\obj\Debug\net6.0\EmployeeManagementSystem.DAL.AssemblyInfoInputs.cache
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\obj\Debug\net6.0\EmployeeManagementSystem.DAL.AssemblyInfo.cs
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\obj\Debug\net6.0\EmployeeManagementSystem.DAL.csproj.CoreCompileInputs.cache
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\obj\Debug\net6.0\EmployeeManagementSystem.DAL.csproj.CopyComplete
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\obj\Debug\net6.0\EmployeeManagementSystem.DAL.dll
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\obj\Debug\net6.0\refint\EmployeeManagementSystem.DAL.dll
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\obj\Debug\net6.0\EmployeeManagementSystem.DAL.pdb
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\obj\Debug\net6.0\EmployeeManagementSystem.DAL.genruntimeconfig.cache
+F:\Stallions\Intern\Angular+Dotnet\EmployeeAttendenceSystem\Backend\EmployeeManagementSystem.DAL\obj\Debug\net6.0\ref\EmployeeManagementSystem.DAL.dll
