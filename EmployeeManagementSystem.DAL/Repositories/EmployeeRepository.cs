@@ -28,6 +28,18 @@ namespace EmployeeManagementSystem.DAL.Repositories
             {
                 throw;
             }
-        }        
+        }
+
+        public async Task<Employee> GetByEmailExcept(string email, Guid id)
+        {
+            try
+            {
+                return await _context.Employee.Where(e => e.Id != id).FirstOrDefaultAsync(e => e.Email.Equals(email));
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }

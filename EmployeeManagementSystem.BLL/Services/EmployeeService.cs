@@ -36,5 +36,14 @@ namespace EmployeeManagementSystem.BLL.Services
             else
                 return false;
         }
+
+        public async Task<bool> IsEmailAvailableExcept(string email, Guid id)
+        {
+            var result = await _employeeRepository.GetByEmailExcept(email,id);
+            if (result != null)
+                return true;
+            else
+                return false;
+        }
     }
 }

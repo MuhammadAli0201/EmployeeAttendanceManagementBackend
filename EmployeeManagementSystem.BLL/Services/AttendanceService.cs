@@ -64,7 +64,7 @@ namespace EmployeeManagementSystem.BLL.Services
                     attendences.Add(attendanceAgainstDate);
                 }
             }
-            return attendences;
+            return attendences.OrderBy(a => a.Employee.Name).ToList();
         }
 
         public async Task<List<Attendance>> GetByDateRangeAndDepartment(DateTime startDate, DateTime endDate, DepartmentEnum department)

@@ -35,8 +35,16 @@ namespace EmployeeAttendenceSystem.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(Employee employee)
         {
-            bool isEmailAlreadyExist = await _employeeService.IsEmailAvailable(employee.Email);
-            if (isEmailAlreadyExist) return BadRequest("Email Already Exist.");
+            if(employee.Id == Guid.Empty)
+            {
+                bool isEmailAlreadyExist = await _employeeService.IsEmailAvailable(employee.Email);
+                if (isEmailAlreadyExist) return BadRequest("Email Already Exist.");
+            }
+            else
+            {
+                bool isEmailAlreadyExist = await _employeeService.IsEmailAvailableExcept(employee.Email,employee.Id);
+                if (isEmailAlreadyExist) return BadRequest("Email Already Exist.");
+            }
 
             employee = await _employeeService.CreateOrUpdate(employee);            
             return Ok(employee);
@@ -48,7 +56,7 @@ namespace EmployeeAttendenceSystem.Controllers
             var employee = await _employeeService.GetSingle(id);
             if (employee == null) return NotFound();
 
-            employee = await _employeeService.Delete(id);
+            employee = await _employeeService.Delete(employee);
             return Ok(employee);
         }
     }

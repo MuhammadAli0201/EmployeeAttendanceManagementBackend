@@ -16,7 +16,7 @@ namespace EmployeeManagementSystem.BLL.Interfaces
         public Task<List<T>> Add(List<T> items);
         public Task<T> Update(T item);
         public Task<List<T>> Update(List<T> items);
-        public Task<T> Delete(Guid id);
+        public Task<T> Delete(T item);
         public Task<List<T>> Delete(List<T> items);       
     }
 }

@@ -22,9 +22,9 @@ namespace EmployeeManagementSystem.BLL.Services
             return await _repository.Add(items);
         }
 
-        public virtual async Task<T> Delete(Guid id)
+        public virtual async Task<T> Delete(T item)
         {
-            return await _repository.Delete(id);
+            return await _repository.Delete(item);
         }
 
         public virtual async Task<List<T>> Delete(List<T> items)

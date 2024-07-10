@@ -11,5 +11,6 @@ namespace EmployeeManagementSystem.BLL.Interfaces
     {
         public Task<Employee> CreateOrUpdate(Employee employee);
         public Task<bool> IsEmailAvailable(string email);
+        Task<bool> IsEmailAvailableExcept(string email, Guid id);
     }
 }

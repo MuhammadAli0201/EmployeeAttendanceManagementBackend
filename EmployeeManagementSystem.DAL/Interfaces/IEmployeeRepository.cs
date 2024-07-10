@@ -10,5 +10,6 @@ namespace EmployeeManagementSystem.DAL.Interfaces
     public interface IEmployeeRepository : IRepository<Employee>
     {
         public Task<Employee> GetByEmail(string email);
+        public Task<Employee> GetByEmailExcept(string email, Guid id);
     }
 }

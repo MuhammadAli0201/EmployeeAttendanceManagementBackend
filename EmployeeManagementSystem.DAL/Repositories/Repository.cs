@@ -42,14 +42,13 @@ namespace EmployeeManagementSystem.DAL.Repositories
             }
         }
 
-        public virtual async Task<T> Delete(Guid id)
+        public virtual async Task<T> Delete(T item)
         {
             try
             {
-                var entity = await GetSingle(id);
-                _context.Set<T>().Remove(entity);
+                _context.Set<T>().Remove(item);
                 await _context.SaveChangesAsync();
-                return entity;
+                return item;
             }
             catch
             {

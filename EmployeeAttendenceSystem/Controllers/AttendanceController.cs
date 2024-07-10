@@ -27,10 +27,11 @@ namespace EmployeeAttendenceSystem.Controllers
         [HttpPost(nameof(CheckInOut))]
         public async Task<IActionResult> CheckInOut(Attendance attendance)
         {
-            var response = await _attendanceService.GetSingle(attendance.Id);
+            var response = await _attendanceService.GetAgainstEmployeeIdAndDate(attendance.EmployeeId,DateTime.Now);
 
             //checks weather a employee attendence already exists if he try to add new attendence row.
-            if (response != null && attendance.CheckInTime != null && response.CheckInTime != null) return Conflict("Already Checked In.");
+            if (response != null && attendance.Id == Guid.Empty && attendance.CheckInTime != null && response.CheckInTime != null) 
+                return Conflict("Already Checked In.");
 
             //handles the checkout if once done don't allow to checkout again against current date time.
             if (response != null && attendance.CheckOutTime != null && response?.CheckOutTime != null) return Conflict("Already Checked Out.");
@@ -44,6 +45,16 @@ namespace EmployeeAttendenceSystem.Controllers
         {
             var attendances = await _attendanceService.GetByDateRangeAndDepartment(startDate, endDate, department);
             return Ok(attendances);
+        }
+        
+        [HttpGet(nameof(GetCurrentDateAttendenceByEmployeeId))]
+        public async Task<IActionResult> GetCurrentDateAttendenceByEmployeeId(Guid id)
+        {
+            var attendance = await _attendanceService.GetAgainstEmployeeIdAndDate(id,DateTime.Now);
+
+            if (attendance == null) return NotFound();
+
+            return Ok(attendance);
         }
     }
 }

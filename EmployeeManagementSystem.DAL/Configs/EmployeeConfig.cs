@@ -14,7 +14,7 @@ namespace EmployeeManagementSystem.DAL.Configs
             builder.HasCheckConstraint("CK_Employee_Email_Format", "Email LIKE '%@%.%'");
             builder.HasIndex(e => e.Email).IsUnique();
 
-            builder.HasMany(e => e.Attendances).WithOne(a => a.Employee).HasForeignKey(a => a.EmployeeId).OnDelete(DeleteBehavior.NoAction);
+            builder.HasMany(e => e.Attendances).WithOne(a => a.Employee).HasForeignKey(a => a.EmployeeId).OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
