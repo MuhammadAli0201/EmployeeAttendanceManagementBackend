@@ -30,7 +30,7 @@ namespace EmployeeAttendenceSystem.Controllers
             var response = await _attendanceService.GetAgainstEmployeeIdAndDate(attendance.EmployeeId,DateTime.Now);
 
             //checks weather a employee attendence already exists if he try to add new attendence row.
-            if (response != null && attendance.Id == Guid.Empty && attendance.CheckInTime != null && response.CheckInTime != null) 
+            if (response != null && attendance.Id == Guid.Empty && attendance.CheckInTime != null && response.CheckInTime != null)
                 return Conflict("Already Checked In.");
 
             //handles the checkout if once done don't allow to checkout again against current date time.
@@ -46,7 +46,7 @@ namespace EmployeeAttendenceSystem.Controllers
             var attendances = await _attendanceService.GetByDateRangeAndDepartment(startDate, endDate, department);
             return Ok(attendances);
         }
-        
+
         [HttpGet(nameof(GetCurrentDateAttendenceByEmployeeId))]
         public async Task<IActionResult> GetCurrentDateAttendenceByEmployeeId(Guid id)
         {
@@ -55,6 +55,14 @@ namespace EmployeeAttendenceSystem.Controllers
             if (attendance == null) return NotFound();
 
             return Ok(attendance);
+        }
+
+        [HttpGet(nameof(GetByEmployeeIdMonthAndYear))]
+        public async Task<IActionResult> GetByEmployeeIdMonthAndYear(Guid id, int month, int year)
+        {
+            var result = await _attendanceService.GetAgainstEmployeeIdMonthAndYear(id, month, year);
+
+            return Ok(result);
         }
     }
 }

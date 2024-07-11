@@ -41,6 +41,43 @@ namespace EmployeeManagementSystem.BLL.Services
             return await _attendanceRepository.GetAgainstEmployeeIdAndDate(employeeId, date);
         }
 
+        public async Task<List<Attendance>> GetAgainstEmployeeIdMonthAndYear(Guid employeeId, int month, int year)
+        {
+            var employee = await _employeeRepository.GetSingle(employeeId);
+            List<Attendance> attendancesAgainstAMonthAndYear = new List<Attendance>();
+            if (employee != null)
+            {
+                DateTime date = new DateTime(year, month, 1);
+                DateTime nextMonthDate = date.AddMonths(1);
+
+                if(nextMonthDate.Month >= DateTime.Now.Month && nextMonthDate.Year >= DateTime.Now.Year)
+                {
+                    nextMonthDate = DateTime.Now;
+                }
+
+                while (date <= nextMonthDate)
+                {
+                    var response = await _attendanceRepository.GetAgainstEmployeeIdAndDate(employeeId, date);
+                    if (response == null)
+                    {
+                        Attendance attendance = new Attendance
+                        {
+                            Date = date,
+                            EmployeeId = employeeId,
+                            Employee = employee
+
+                        };
+                        attendancesAgainstAMonthAndYear.Add(attendance);
+                    }
+                    else
+                        attendancesAgainstAMonthAndYear.Add(response);
+                    date = date.AddDays(1);
+                }
+            }
+            return attendancesAgainstAMonthAndYear;
+
+        }
+
         public async Task<List<Attendance>> GetByDate(DateTime date)
         {
             var employees = await _employeeRepository.Get();
@@ -57,7 +94,7 @@ namespace EmployeeManagementSystem.BLL.Services
                 {
                     attendanceAgainstDate = new Attendance
                     {
-                        Date=date,
+                        Date = date,
                         EmployeeId = employee.Id,
                         Employee = employee,
                     };

@@ -14,5 +14,6 @@ namespace EmployeeManagementSystem.BLL.Interfaces
         public Task<List<Attendance>> GetByDateRangeAndDepartment(DateTime startDate, DateTime endDate,DepartmentEnum department);
         public Task<Attendance> CheckInOut(Attendance attendance);
         public Task<Attendance> GetAgainstEmployeeIdAndDate(Guid employeeId, DateTime date);
+        public Task<List<Attendance>> GetAgainstEmployeeIdMonthAndYear(Guid employeeId, int month,int year);
     }
 }
